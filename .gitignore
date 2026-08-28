@@ -1,0 +1,50 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Expo
+.expo/
+dist/
+web-build/
+*.orig.*
+
+# Native
+ios/
+android/
+*.keystore
+*.jks
+
+# Firebase / secrets
+google-services.json
+GoogleService-Info.plist
+.env
+.env.*
+!.env.example
+*.p8
+firebase-debug.log
+firestore-debug.log
+.firebase/
+
+# Build / cache
+build/
+coverage/
+.turbo/
+*.tsbuildinfo
+
+# SQLite local dev artifacts
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+npm-debug.*
+yarn-error.*
+*.log
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
