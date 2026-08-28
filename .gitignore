@@ -16,8 +16,8 @@ android/
 *.jks
 
 # Firebase / secrets
-google-services.json
-GoogleService-Info.plist
+google-services*.json
+GoogleService-Info*.plist
 .env
 .env.*
 !.env.example
