@@ -5,7 +5,16 @@ import globals from "globals";
 
 export default tseslint.config(
   {
-    ignores: ["**/node_modules/**", "**/dist/**", "**/build/**", "**/.expo/**", "**/coverage/**"],
+    // apps/mobile is linted by Expo (`expo lint`); the root config targets
+    // the framework-free packages and tooling only.
+    ignores: [
+      "**/node_modules/**",
+      "**/dist/**",
+      "**/build/**",
+      "**/.expo/**",
+      "**/coverage/**",
+      "apps/mobile/**",
+    ],
   },
   js.configs.recommended,
   ...tseslint.configs.recommended,
